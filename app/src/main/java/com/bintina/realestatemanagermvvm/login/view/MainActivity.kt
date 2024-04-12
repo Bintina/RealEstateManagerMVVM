@@ -1,8 +1,9 @@
-package com.bintina.realestatemanagermvvm
+package com.bintina.realestatemanagermvvm.login.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.bintina.realestatemanagermvvm.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

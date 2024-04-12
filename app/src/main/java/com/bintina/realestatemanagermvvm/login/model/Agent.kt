@@ -1,4 +1,4 @@
-package com.bintina.realestatemanagermvvm.model
+package com.bintina.realestatemanagermvvm.login.model
 
 class Agent(val agentId: Long, val agentName: String) {
 

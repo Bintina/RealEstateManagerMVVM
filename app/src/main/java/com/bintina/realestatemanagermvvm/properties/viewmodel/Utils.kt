@@ -1,4 +1,4 @@
-package com.bintina.realestatemanagermvvm
+package com.bintina.realestatemanagermvvm.properties.viewmodel
 
 import android.content.Context
 import android.net.wifi.WifiManager
