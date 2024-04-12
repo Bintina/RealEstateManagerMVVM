@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,4 +47,13 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    dependencies {
+
+      //ROOM
+      implementation("android.arch.persistence.room:runtime:1.1.1")
+      annotationProcessor("android.arch.persistence.room:compiler:1.1.1")
+      //VIEW MODEL & LIVE DATA
+      implementation("android.arch.lifecycle:extensions:1.1.1")
+    }
 }
