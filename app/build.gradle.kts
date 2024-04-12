@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.bintina.realestatemanagermvvm"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.bintina.realestatemanagermvvm"
