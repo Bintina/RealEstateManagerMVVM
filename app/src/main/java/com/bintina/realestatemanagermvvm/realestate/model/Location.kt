@@ -1,6 +1,7 @@
 package com.bintina.realestatemanagermvvm.realestate.model
 
-import android.arch.persistence.room.Entity
+import androidx.room.Entity
+
 
 @Entity
 class Location {
