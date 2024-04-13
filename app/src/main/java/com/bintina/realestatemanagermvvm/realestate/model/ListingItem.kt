@@ -1,4 +1,4 @@
-package com.bintina.realestatemanagermvvm.properties.model
+package com.bintina.realestatemanagermvvm.realestate.model
 
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
