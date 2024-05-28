@@ -77,7 +77,7 @@ jobs:
       - name: Prepare emulator
         run: brew install --cask android-sdk
 
-      - name: Start emulator
+      - name: Start emulator and run tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
@@ -85,14 +85,6 @@ jobs:
           arch: x86_64
           profile: Nexus 6
           emulator-options: '-no-window -gpu swiftshader_indirect -no-snapshot'
-
-      - name: Wait for emulator
-        run: adb wait-for-device
-
-      - name: Run espresso tests
-        uses: reactivecircus/android-emulator-runner@v2
-        with:
-          api-level: 29
           script: ./gradlew connectedCheck
 
       - name: Upload test report
