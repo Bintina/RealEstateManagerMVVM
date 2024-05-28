@@ -1,4 +1,4 @@
-package com.bintina.realestatemanagermvvm.login.view
+package com.bintina.realestatemanagermvvm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

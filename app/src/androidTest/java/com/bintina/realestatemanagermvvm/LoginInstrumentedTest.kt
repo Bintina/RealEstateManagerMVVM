@@ -5,7 +5,6 @@ import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.bintina.realestatemanagermvvm.login.view.MainActivity
 import junit.framework.TestCase
 import org.junit.Rule
 import org.junit.Test
