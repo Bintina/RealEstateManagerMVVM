@@ -76,6 +76,24 @@ jobs:
       - name: Set execute permissions for gradlew
         run: chmod +x ./gradlew
 
+      - name: Prepare emulator
+        run: |
+          sudo apt-get update
+          sudo apt-get install -yq libgl1-mesa-glx
+
+      - name: Start emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          target: default
+          arch: x86_64
+          profile: Nexus 6
+          emulator-options: '-no-window -gpu swiftshader_indirect -no-snapshot'
+
+      - name: Wait for emulator
+        run: adb wait-for-device
+
+
       - name: Run espresso tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
