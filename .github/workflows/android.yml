@@ -75,9 +75,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Prepare emulator
-        run: |
-          sudo apt-get update
-          sudo apt-get install -yq libgl1-mesa-glx
+        run: brew install --cask android-sdk
 
       - name: Start emulator
         uses: reactivecircus/android-emulator-runner@v2
