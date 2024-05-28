@@ -1,4 +1,6 @@
 package com.bintina.realestatemanagermvvm.login.view
 
-class LoginFragment {
+import androidx.fragment.app.Fragment
+
+class LoginFragment: Fragment() {
 }
