@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         val toolbar = binding.toolbar
         setSupportActionBar(toolbar)
         //Customize the toolbar color
