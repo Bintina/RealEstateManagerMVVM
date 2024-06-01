@@ -89,7 +89,10 @@ dependencies {
     // TODO: Add the dependencies for Firebase products you want to use
     // When using the BoM, don't specify versions in Firebase dependencies
     implementation("com.google.firebase:firebase-analytics")
-
+    //Auth
+    implementation("com.google.firebase:firebase-auth")
+    //UI Auth
+    implementation("com.firebaseui:firebase-ui-auth:8.0.2")
 
 }
 
