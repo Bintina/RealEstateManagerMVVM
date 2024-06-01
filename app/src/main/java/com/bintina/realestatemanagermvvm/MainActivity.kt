@@ -16,6 +16,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import com.bintina.realestatemanagermvvm.R
 import com.bintina.realestatemanagermvvm.databinding.ActivityMainBinding
+import com.bintina.realestatemanagermvvm.util.MyApp.Companion.navController
 import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
 
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     lateinit var binding: ActivityMainBinding
-    lateinit var navController: NavController
+
 
     @RequiresApi(Build.VERSION_CODES.P)
     override fun onCreate(savedInstanceState: Bundle?) {
