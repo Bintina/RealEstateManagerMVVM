@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/login_dest"
-        android:name="com.bintina.realestatemanagermvvm.login.view.LoginFragment"
+        android:name="com.bintina.realestatemanagermvvm.login.view.MyLoginFragment"
         android:label="Login"
         tools:layout="@layout/fragment_login">
 
