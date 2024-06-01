@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login_dest">
+
+    <fragment
+        android:id="@+id/login_dest"
+        android:name="com.bintina.realestatemanagermvvm.login.view.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/list_property_dest"
+        android:name="com.bintina.realestatemanagermvvm.realestate.view.ListPropertiesFragment"
+        android:label="Real Estate List"
+        tools:layout="@layout/fragment_login">
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/property_dest"
+        android:name="com.bintina.realestatemanagermvvm.realestate.view.PropertyFragment"
+        android:label="Property Details"
+        tools:layout="@layout/fragment_login">
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/search_dest"
+        android:name="com.bintina.realestatemanagermvvm.realestate.view.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_login">
+
+
+    </fragment>
+
+
+</navigation>

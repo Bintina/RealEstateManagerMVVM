@@ -1,7 +1,10 @@
 plugins {
     id("com.android.application")
-kotlin("android")
+    kotlin("android")
     kotlin("kapt")
+    // Add the Google services Gradle plugin
+    id("com.google.gms.google-services")
+
 }
 
 android {
@@ -46,6 +49,7 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.annotation:annotation:1.7.1")
+    debugImplementation("androidx.fragment:fragment-testing:1.7.1")
     //Testing
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -75,8 +79,21 @@ dependencies {
 
     //Glide Image dependancy
     implementation("com.github.bumptech.glide:glide:4.16.0")
-    annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
     implementation("com.github.bumptech.glide:okhttp3-integration:4.11.0")
+
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+
+
+    // TODO: Add the dependencies for Firebase products you want to use
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation("com.google.firebase:firebase-analytics")
+    //Auth
+    implementation("com.google.firebase:firebase-auth")
+    //UI Auth
+    implementation("com.firebaseui:firebase-ui-auth:8.0.2")
+
 }
 
 // Allow references to generated code

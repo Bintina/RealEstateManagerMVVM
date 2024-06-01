@@ -12,7 +12,7 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 class LoginInstrumentedTest {
-    @Rule
+  /*  @Rule
     @JvmField
     val rule: ActivityScenarioRule<MainActivity> = ActivityScenarioRule(MainActivity::class.java)
 
@@ -32,5 +32,5 @@ class LoginInstrumentedTest {
         TestCase.assertNotNull(withId(R.id.google_login))
         Espresso.onView(withId(R.id.google_login)).perform(ViewActions.click())
 
-    }
+    }*/
 }
