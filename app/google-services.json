@@ -7,31 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:56713823980:android:4d59cb8cd22da19db6c7c9",
-        "android_client_info": {
-          "package_name": "com.bintina"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDjVe219d9QFRvK68YspwypbIVrUfQA8Rg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:56713823980:android:75a1487b40c4f908b6c7c9",
         "android_client_info": {
           "package_name": "com.bintina.realestatemanagermvvm"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "56713823980-3loems2346nsp9lqgnl9hrkhjk93fnu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDjVe219d9QFRvK68YspwypbIVrUfQA8Rg"
@@ -39,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56713823980-3loems2346nsp9lqgnl9hrkhjk93fnu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
