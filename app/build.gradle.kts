@@ -2,6 +2,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+
         // Other repositories if needed
     }
     dependencies {
@@ -115,7 +116,7 @@ dependencies {
     // Espresso for UI testing (optional, if you need it)
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    testImplementation("androidx.test.espresso:espresso-contrib:3.5.1")
+    implementation("androidx.test.espresso:espresso-contrib:3.5.1")
     //testImplementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.7.7")
 
 
@@ -198,10 +199,8 @@ kapt {
 }
 
 kotlin {
-    android {
-        kotlinOptions {
-            jvmTarget = "1.8"
-        }
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
     }
 }
 
