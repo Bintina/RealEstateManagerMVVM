@@ -1,3 +1,14 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        // Other repositories if needed
+    }
+    dependencies {
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.7.7")
+    }
+}
+
 plugins {
     id("com.android.application")
     kotlin("android")
@@ -104,6 +115,7 @@ dependencies {
     androidTestImplementation("androidx.navigation:navigation-testing:2.7.7")
     // Espresso for UI testing (optional, if you need it)
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    testImplementation("androidx.test.expresso:espresso-contrib:3.5.1")
     //testImplementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.7.7")
 
 
@@ -170,7 +182,7 @@ dependencies {
 
     //Glide Image dependancy
     implementation("com.github.bumptech.glide:glide:4.16.0")
-    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+    ksp("com.github.bumptech.glide:ksp:4.16.0")
     implementation("com.github.bumptech.glide:okhttp3-integration:4.16.0")
 
     //RecyclerView dependency
