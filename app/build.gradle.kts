@@ -115,7 +115,7 @@ dependencies {
     // Espresso for UI testing (optional, if you need it)
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    testImplementation("androidx.test.espresso:espresso-contrib:3.5.1:espresso-contrib:3.5.1")
+    testImplementation("androidx.test.espresso:espresso-contrib:3.5.1")
     //testImplementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.7.7")
 
 
