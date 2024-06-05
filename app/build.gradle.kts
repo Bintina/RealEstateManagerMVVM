@@ -7,6 +7,7 @@ buildscript {
     }
     dependencies {
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.7.7")
+
     }
 }
 
@@ -34,7 +35,7 @@ android {
     defaultConfig {
         applicationId = "com.bintina.realestatemanagermvvm"
         minSdk = 28
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -86,6 +87,7 @@ dependencies {
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.annotation:annotation:1.8.0")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
     debugImplementation("androidx.fragment:fragment-testing:1.7.1")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.24")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.9.10")
@@ -171,9 +173,9 @@ dependencies {
     implementation("com.google.android.gms:play-services-auth:20.7.0")
 
     //Google Maps
-    /*implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
     implementation("com.google.maps.android:android-maps-utils:3.8.2")
-    implementation("com.google.android.libraries.places:places:3.4.0")*/
+    implementation("com.google.android.libraries.places:places:3.5.0")
 
     //Retrofit implementations
     implementation("com.squareup.retrofit2:retrofit:2.11.0")

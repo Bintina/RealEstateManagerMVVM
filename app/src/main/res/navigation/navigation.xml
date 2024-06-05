@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/login_dest">
+    app:startDestination="@id/map_dest">
 
     <fragment
         android:id="@+id/login_dest"
@@ -29,6 +28,12 @@
         android:label="Property Details"
         tools:layout="@layout/fragment_login">
 
+    </fragment>
+    <fragment
+        android:id="@+id/map_dest"
+        android:name="com.bintina.realestatemanagermvvm.realestate.MapsFragment"
+        android:label="Property on Map"
+        tools:layout="@layout/fragment_maps">
 
     </fragment>
     <fragment
