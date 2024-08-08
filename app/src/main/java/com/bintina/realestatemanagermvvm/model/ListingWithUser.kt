@@ -1,11 +1,8 @@
-package com.bintina.realestatemanagermvvm.model.database
+package com.bintina.realestatemanagermvvm.model
 
 import androidx.room.Embedded
 import androidx.room.Junction
 import androidx.room.Relation
-import com.bintina.realestatemanagermvvm.model.LocalListing
-import com.bintina.realestatemanagermvvm.model.LocalUser
-import com.bintina.realestatemanagermvvm.model.UserListingCrossRef
 
 data class ListingWithUser(
     @Embedded val listing: LocalListing = LocalListing(),
