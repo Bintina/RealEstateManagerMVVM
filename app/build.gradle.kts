@@ -1,6 +1,18 @@
+/*buildScript {
+    repositories{
+        google()
+        mavenCentral()
+    }
+
+}*/
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+/*    //ksp plugin
+    id("com.google.devtools.ksp")*/
+    //room plugin
+    id("androidx.room")
 }
 
 android {
@@ -35,6 +47,9 @@ android {
     }
     buildFeatures{
         compose = true
+    }
+    room {
+        schemaDirectory("$projectDir/schemas")
     }
 
 }
@@ -82,5 +97,21 @@ dependencies {
     //RxJava implementation
     implementation("androidx.compose.runtime:runtime-rxjava2")
 
+    //Room dependencies
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    /*ksp("androidx.room:room-compiler:2.6.1")*/
+    implementation("androidx.room:room-ktx:2.6.1")
+    androidTestImplementation("androidx.room:room-testing:2.6.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.5.0")
+
+    //ViewModel and LiveData Dependencies
+    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
+    implementation("androidx.lifecycle.lifecycle-common-java8:2.8.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.4")
+    implementation("androidx.lifecycle:lifecycle-runtime-linuxx64:2.8.4")
 
 }
