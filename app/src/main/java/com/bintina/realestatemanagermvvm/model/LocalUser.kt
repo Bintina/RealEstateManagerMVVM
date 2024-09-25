@@ -7,11 +7,13 @@ import androidx.room.PrimaryKey
 
 @Entity(indices = [Index(value = ["uid"], unique = true)])
 data class LocalUser(
-    @PrimaryKey(autoGenerate = false) val uid: String = "",
+    @PrimaryKey(autoGenerate = false)
+    val uid: String = "",
     @ColumnInfo(name = "name")
-                     val name: String= "",
+    val name: String = "",
     @ColumnInfo(name = "isAgent")
-    var isAgent: Boolean = false)
+    var isAgent: Boolean = false
+)
 
 
 
