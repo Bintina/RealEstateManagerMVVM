@@ -52,6 +52,9 @@ android {
         schemaDirectory("$projectDir/schemas")
     }
 
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.6"
+    }
 }
 
 dependencies {
@@ -71,6 +74,8 @@ dependencies {
     androidTestImplementation(composeBom)
     implementation("androidx.compose.runtime:runtime")
     implementation("androidx.compose.ui:ui-graphics")
+
+    implementation("androidx.compose.compiler:compiler:1.4.6")
 
     //Material Design 3
     implementation("androidx.compose.material3:material3")
@@ -109,10 +114,9 @@ dependencies {
     //ViewModel and LiveData Dependencies
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
-    implementation("androidx.lifecycle.lifecycle-common-java:2.8.1")
+    implementation("androidx.lifecycle:lifecycle-common-java8:2.8.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.4")
-    implementation("androidx.lifecycle:lifecycle-runtime-linuxx64:2.8.4")
 
 }
